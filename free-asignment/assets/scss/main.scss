@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  outline: none;
+}
+@import "./helper/variables";
+@import "./helper/mixin";
+@import "./helper/placeholder";
+@import "./helper/extend";
+@import "./helper/grid";
+@import "./helper/nav";
+@import "./helper/footer";
+@import "./helper/animation";
+@import "./helper/daynight";
+@import "./helper/main-object";
+
+.parralax-div {
+  width: 100%;
+  height: 400px;
+  perspective: 1px;
+  transform: translate(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  @include parallax-background("../img/sparralaximg.jpg");
+}
+
+body {
+  height: 100%;
+  background-color: $col-black-dmode;
+}
+
+.main-1 {
+  height: 600px;
+}
+
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0vw;
+  width: 78.125vw;
+  margin: auto auto;
+  margin-top: 20px;
+  hr {
+    border: 1px solid $col-orange-dmode;
+    border-radius: 5px;
+    width: 100%;
+    margin: 4px 0px;
+  }
+  .art-one, .art-two, .art-three {
+    background-color: $col-blue-dmode-info;
+    opacity: 75%;
+    padding: 20px;
+    margin-bottom: 40px;
+    outline: 2px solid rgba(0, 0, 0, 0.25);
+  }
+}
+
+.first-random-3 {
+  margin-bottom: 50px;
+}
+
+.second-random-3 {
+  margin-top: 150px;
+}
+
+.first-random-3, .second-random-3 {
+  .fr3-div , .sr3-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+    width: 78.125vw;
+    margin: auto auto;
+    
+    .fr3-1, .fr3-2, .fr3-3, .sr3-1, .sr3-2, .sr3-3 {
+      background-color: $col-blue-dmode-info;
+      opacity: 75%;
+      padding: 20px;
+      .i1-img-1, .i1-img-2, .i1-img-3, .i2-img-1, .i2-img-2, .i2-img-3 {
+        width: 100%;
+        height: 400px;
+        perspective: 1px;
+        transform: translate(-1px);
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+      }
+      .i1-img-1 {
+        @include parallax-background("../img/image1.jpg");
+      }
+      .i1-img-2 {
+        @include parallax-background("../img/image3.jpg");
+      }
+      .i1-img-3 {
+        @include parallax-background("../img/image2.jpg");
+      }
+      .i2-img-1 {
+        @include parallax-background("../img/one1.jpg");
+      }
+      .i2-img-2 {
+        @include parallax-background("../img/two2.jpg");
+      }
+      .i2-img-3 {
+        @include parallax-background("../img/three3.png");
+      }
+      .black {
+        height: 400px;
+        width: 434px;
+        position: absolute;
+        margin: -400px 0px 0px -1px;
+        padding: 0;
+        &:hover {
+          background-color: black;
+          opacity: 50%;
+        }
+      }
+    }
+  }
+}

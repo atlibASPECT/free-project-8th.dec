@@ -1,0 +1,94 @@
+@import "./variables";	
+  
+    h1 {
+      font-size: 200px;
+      text-align: center;
+      color: wheat;
+      text-shadow: -40px -40px 0px yellowgreen;
+    }
+    h6 {
+      color: red;
+      position: absolute;
+      // margin-top: 68.5vw; //BIG SCREEN
+      margin-top: 975px; //LAPTOP
+      span {
+        color: rgba(255, 0, 0, 0.5);
+      }
+    }
+    .main-object {
+      display: grid;
+      grid-template-rows: auto auto;
+      position: relative;
+      .grid-part-1 {
+        position: absolute;
+        height: 100px;
+        width: 1400px;
+        margin-top: 550px;
+        margin-left: 330px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+
+        .small {
+          height: 150px;
+          width: 250px;
+          background: red;
+          border: 3px solid black;
+        }
+        .small-img-1 {
+          background-image: url(/assets/img/image5.jpg);
+          background-size: cover;
+          box-shadow: -15px -15px 10px #00000050;
+          &:hover {
+            border: 5px solid black;
+        }
+        }
+        .small-img-2 {
+            background-image: url(/assets/img/image4.jpg);
+            background-size: cover;
+            box-shadow: -15px -15px 10px #00000050;
+            &:hover {
+                border: 5px solid black;
+            }
+        }
+        .small-img-3 {
+            background-image: url(/assets/img/image6.jpg);
+            background-size: cover;
+            box-shadow: -15px -15px 10px #00000050;
+            &:hover {
+                border: 5px solid black;
+            }
+        }
+        .small-img-4 {
+            background-image: url(/assets/img/image7.jpg);
+            background-size: cover;
+            box-shadow: -15px -15px 10px #00000050;
+            &:hover {
+                border: 5px solid black;
+            }
+        }
+        .small-img-5 {
+            background-image: url(/assets/img/image8.jpg);
+            background-size: cover;
+            box-shadow: -15px -15px 10px #00000050;
+            &:hover {
+                border: 5px solid black;
+            }
+        }
+      }
+      .grid-part-2 {
+        position: absolute;
+        margin-left: 200px;
+        
+        .big-img {
+            background-image: url(/assets/img/image5.jpg);
+            background-size: cover;
+            width: 900px;
+            height: 500px;
+            box-shadow: -35px -35px 10px #00000050;
+            &:hover {
+                border: 5px solid black;
+            }
+        }
+      }
+    }
+  

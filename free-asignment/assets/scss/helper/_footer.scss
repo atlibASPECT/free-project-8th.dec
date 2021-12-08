@@ -1,0 +1,15 @@
+@import "./variables";
+
+footer {
+  align-items: center;
+  margin: auto auto;
+  background-color: $col-white-dmode;
+  height: 100px;
+  margin-top: 35px;
+  
+  p {
+    font-weight: bold;
+    margin-left: 850px;
+    padding-top: 40px;
+  }
+}
